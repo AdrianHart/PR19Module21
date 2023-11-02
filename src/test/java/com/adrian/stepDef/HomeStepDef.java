@@ -1,16 +1,13 @@
-package stepDef;
+package com.adrian.stepDef;
 
-import com.adrian.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import page.HomePage;
-import page.MenuPage;
+import com.adrian.page.HomePage;
 
 public class HomeStepDef extends BaseTest {
     HomePage homePage;
-    MenuPage menuPage;
-    @Then("user will be directed to the home page")
+    @Then("user will be directed to the homepage")
     public void userWillBeDirectedToTheHomePage() {
         homePage = new HomePage(driver);
         homePage.validateOnHomePage();
@@ -53,31 +50,4 @@ public class HomeStepDef extends BaseTest {
         homePage.validatePriceHighToLowFilter();
     }
 
-    //SIDEBAR MENU
-    @When("user click menu button")
-    public void userClickMenuButton() {
-        menuPage = new MenuPage(driver);
-        menuPage.clickMenuButton();
-    }
-
-    @And("user click about sidebar")
-    public void userClickAboutSidebar() {
-        menuPage.clickAboutElementButton();
-    }
-
-    @Then("the user can see the company information on the website")
-    public void theUserCanSeeTheCompanyInformationOnTheWebsite() {
-        //ACTUAL : MOVE TO SAUCELABS HOMEPAGE
-        menuPage.navigateToSauceLabsPage();
-    }
-
-    @And("user click Logout sidebar")
-    public void userClickLogoutSidebar() {
-        menuPage.clickLogoutElement();
-    }
-
-    @And("user click Reset App State sidebar")
-    public void userClickResetAppStateSidebar() {
-        menuPage.clickResetAppState();
-    }
 }

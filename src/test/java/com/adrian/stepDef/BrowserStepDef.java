@@ -1,8 +1,7 @@
-package stepDef;
+package com.adrian.stepDef;
 
-import com.adrian.BaseTest;
 import io.cucumber.java.en.Given;
-import page.LoginPage;
+import com.adrian.page.LoginPage;
 
 public class BrowserStepDef extends BaseTest {
     LoginPage loginPage;

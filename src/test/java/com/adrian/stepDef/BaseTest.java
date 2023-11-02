@@ -1,4 +1,4 @@
-package com.adrian;
+package com.adrian.stepDef;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

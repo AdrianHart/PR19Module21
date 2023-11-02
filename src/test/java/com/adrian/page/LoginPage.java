@@ -1,4 +1,4 @@
-package page;
+package com.adrian.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,8 +12,8 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    By usernameTextBox = By.id("user-name");
-    By passwordTextBox = By.id("password");
+    By usernameTextBox = By.cssSelector("input#user-name");
+    By passwordTextBox = By.xpath("//*[@id=\"password\"]");
     By loginButton = By.id("login-button");
 
     public void goToLoginPage() {

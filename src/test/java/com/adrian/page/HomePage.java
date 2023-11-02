@@ -1,4 +1,4 @@
-package page;
+package com.adrian.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +20,6 @@ public class HomePage {
     }
 
 
-    //FILTER SCOPE
     By filterButton = By.cssSelector(".product_sort_container");
 
     public void clickFilterButton() {

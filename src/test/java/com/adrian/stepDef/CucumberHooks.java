@@ -1,10 +1,10 @@
-package stepDef;
+package com.adrian.stepDef;
 
-import com.adrian.BaseTest;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
+
 
 public class CucumberHooks extends BaseTest {
 
@@ -23,6 +23,6 @@ public class CucumberHooks extends BaseTest {
 
     @After
     public void afterTest() {
-        closeDriver();
+        quitDriver();
     }
 }

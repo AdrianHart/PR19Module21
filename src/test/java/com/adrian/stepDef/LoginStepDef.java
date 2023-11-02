@@ -1,11 +1,10 @@
-package stepDef;
+package com.adrian.stepDef;
 
-import com.adrian.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import page.LoginPage;
+import com.adrian.page.LoginPage;
 
 public class LoginStepDef extends BaseTest {
     LoginPage loginPage;
@@ -30,7 +29,7 @@ public class LoginStepDef extends BaseTest {
         loginPage.validateErrorAppear(errorMessage);
     }
 
-    @Given("user already signed in and on the home page")
+    @Given("user already signed in and on the homepage")
     public void userAlreadySignedInAndOnTheHomePage() {
         loginPage = new LoginPage(driver);
         loginPage.goToLoginPage();
