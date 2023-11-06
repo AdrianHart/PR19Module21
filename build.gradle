@@ -44,7 +44,7 @@ tasks.register('SauceDemoTest') {
                     '--plugin', 'pretty',
                     '--glue', 'com.adrian',
                     '--tags', "${tags}",
-                    'src/test/java/features'
+                    'src/test/java/com/adrian/features'
             ]
         }
     }
