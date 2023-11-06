@@ -42,7 +42,7 @@ tasks.register('SauceDemoTest') {
             args = [
                     '--plugin', 'html:reports/test-report.html',
                     '--plugin', 'pretty',
-                    '--glue', 'stepDef',
+                    '--glue', 'com.adrian',
                     '--tags', "${tags}",
                     'src/test/java/features'
             ]
