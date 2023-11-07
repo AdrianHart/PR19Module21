@@ -35,9 +35,8 @@ jobs:
         name: Test Report
         path: reports
         
-    - name: Deploy report to Github Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v3.7.3
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        PERSONAL_TOKEN: ${{ secrets.TOKEN_GITHUB }}
-        PUBLISH_DIR: reports
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
