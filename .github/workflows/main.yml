@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  selenium-test:
+  saucedemo-test-selenium:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,14 +29,15 @@ jobs:
       run: ./gradlew SauceDemoTest
 
     - name: Archive Test Result
-      uses: actions/upload-artifact@v3.1.3
+      uses: actions/upload-artifact@v3.1.0
       if: always()
       with:
         name: Test Report
         path: reports
         
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy report to Github
+      if: always()
+      uses: peaceiris/actions-gh-pages@v3.7.3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_DIR: reports
