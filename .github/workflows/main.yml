@@ -32,12 +32,13 @@ jobs:
       uses: actions/upload-artifact@v3.1.0
       if: always()
       with:
-        name: Test Report
+        name: Cuucumber Report
         path: reports
         
-    - name: Deploy report to Github
+    - name: Deploy report to Github Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v3.7.3
       with:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: test-reports
         PUBLISH_DIR: reports
