@@ -47,3 +47,8 @@ This will run the Cucumber tests with the specified configuration and generate a
 ## Screenshoot Running Test
 
 https://github.com/AdrianHart/PR19Module21/blob/ce4546b4161d8c1a0b87ae0c516bf9e2e91bde19/Running%20Test%20PR%2019%20Module%2021.PNG
+
+## Screenshoot Pipeline Test
+
+https://github.com/AdrianHart/PR19Module21/blob/main/Running%20Pipeline%20Workflow.PNG
+
