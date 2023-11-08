@@ -48,7 +48,15 @@ This will run the Cucumber tests with the specified configuration and generate a
 
 https://github.com/AdrianHart/PR19Module21/blob/main/Running%20Test%20PR%2019%20Module%2021.PNG
 
-## Screenshoot Pipeline Test
+## Intro CI/CD Pipelines
+
+Continuous Integration (CI) and Continuous Delivery (CD) are the Holy Grail for software development teams: no matter who pushes the feature, the same tests are run, the same processes are followed, and nothing gets released without satisfying well-defined quality standards.
+Unfortunately, setting up that initial CI/CD workflow can be a bit daunting for teams that don’t have an experienced DevOps engineer.
+
+## Screenshoot CI/CD Pipeline Test
+
+1. https://github.com/AdrianHart/PR19Module21/blob/main/Running%20Pipeline%20Workflow%201.PNG
+2. https://github.com/AdrianHart/PR19Module21/blob/main/Running%20Pipeline%20Workflow%202.PNG
 
 
 
